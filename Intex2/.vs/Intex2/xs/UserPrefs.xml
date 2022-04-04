@@ -1,4 +1,32 @@
 ﻿<Properties StartupConfiguration="{019D3B76-BE74-440E-B67B-464242C44EB8}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Intex2/Controllers/HomeController.cs">
+    <Files>
+      <File FileName="Intex2/Controllers/HomeController.cs" Line="25" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Intex2" expanded="True">
+            <Node name="Intex2" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="HomeController.cs" selected="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Intex2 FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Intex2 FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>
