@@ -10,6 +10,14 @@
     <None Remove="Microsoft.EntityFrameworkCore" />
     <None Remove="Pomelo.EntityFrameworkCore.MySql" />
     <None Remove="Models\" />
+    <None Remove="Infrastructure\" />
+    <None Remove="Models\ViewModels\" />
+    <None Remove="Views\Account\" />
+    <None Remove="Areas\" />
+    <None Remove="Areas\Identity\" />
+    <None Remove="Areas\Identity\Pages\" />
+    <None Remove="Pages\" />
+    <None Remove="Pages\Admin\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.22" />
@@ -27,5 +35,13 @@
 
   <ItemGroup>
     <Folder Include="Models\" />
+    <Folder Include="Infrastructure\" />
+    <Folder Include="Models\ViewModels\" />
+    <Folder Include="Views\Account\" />
+    <Folder Include="Areas\" />
+    <Folder Include="Areas\Identity\" />
+    <Folder Include="Areas\Identity\Pages\" />
+    <Folder Include="Pages\" />
+    <Folder Include="Pages\Admin\" />
   </ItemGroup>
 </Project>

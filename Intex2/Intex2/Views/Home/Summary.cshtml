@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Collision Summary";
+}
+
+@model List<Collision>
+
+<table class="table table-sm table-striped table-bordered">
+
+    <thead>
+        <tr>
+            <th>Crash Date</th>
+            <th>Road Name</th>
+            <th>City</th>
+            <th>County</th>
+            <th>Severity</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (var c in Model)
+        {
+            <tr>
+                <td>@c.CRASH_DATETIME</td>
+                <td>@c.MAIN_ROAD_NAME</td>
+                <td>@c.CITY</td>
+                <td>@c.COUNTY_NAME</td>
+                <td>@c.CRASH_SEVERITY_ID</td>
+                <a href="">View Details</a>
+            </tr>
+        }
+    </tbody>
+</table>
