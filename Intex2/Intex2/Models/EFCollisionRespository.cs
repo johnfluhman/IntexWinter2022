@@ -14,7 +14,7 @@ namespace Intex2.Models
     //    _context.Bowlers.Add(collision);
     //    _context.SaveChanges();
     //}
-    //public void RemoveCollision(Collision collision)
+    //public void DeleteCollision(Collision collision)
     //{
     //    _context.Bowlers.Remove(collision);
     //    _context.SaveChanges();

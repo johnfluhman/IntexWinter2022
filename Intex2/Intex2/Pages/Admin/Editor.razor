@@ -1,5 +1,281 @@
-﻿<h3>Component1</h3>
+﻿@page "/admin/books/edit/{id:long}"
+@page "/admin/books/create"
+@inherits OwningComponentBase<ICollisionRepository>
+
+<style>
+    div.validation-message {
+        color: rgb(220,53,69);
+        font-weight: 500
+    }
+</style>
+
+<EditForm Model="c" OnValidSubmit="SaveCollision">
+    <DataAnnotationsValidator></DataAnnotationsValidator>
+    <div class="form-group">
+        <label><strong>Crash Id:</strong></label>
+        <input class="form-control" disabled value="@c.CRASH_ID" />
+    </div>
+    <div class="form-group">
+        <label><strong>Date of Collision:</strong></label>
+        <ValidationMessage For="@(() => c.CRASH_DATETIME)"></ValidationMessage>
+        <InputText class="form-control" @bind-value="c.CRASH_DATETIME"></InputText>
+    </div>
+    <div class="form-group">
+        <label><strong>Route Collision Occurred On:</strong></label>
+        <ValidationMessage For="@(() => c.ROUTE)"></ValidationMessage>
+        <InputText class="form-control" @bind-value="c.ROUTE"></InputText>
+    </div>
+    <div class="form-group">
+        <label><strong>Mile Point Collision Occurred At:</strong></label>
+        <ValidationMessage For="@(() => c.MILEPOINT)"></ValidationMessage>
+        <InputText class="form-control" @bind-value="c.MILEPOINT"></InputText>
+    </div>
+    <div class="form-group">
+        <label><strong>Latitude of Collision:</strong></label>
+        <ValidationMessage For="@(() => c.LAT_UTM_Y)"></ValidationMessage>
+        <InputText class="form-control" @bind-value="c.LAT_UTM_Y"></InputText>
+    </div>
+    <div class="form-group">
+        <label><strong>Longitude of Collision:</strong></label>
+        <ValidationMessage For="@(() => c.LONG_UTM_X)"></ValidationMessage>
+        <InputText class="form-control" @bind-value="c.LONG_UTM_X"></InputText>
+    </div>
+    <div class="form-group">
+        <label><strong>Name of Road Where Collision Occurred:</strong></label>
+        <ValidationMessage For="@(() => c.MAIN_ROAD_NAME)"></ValidationMessage>
+        <InputText class="form-control" @bind-value="c.MAIN_ROAD_NAME"></InputText>
+    </div>
+    <div class="form-group">
+        <label><strong>City Where Collision Occurred:</strong></label>
+        <ValidationMessage For="@(() => c.CITY)"></ValidationMessage>
+        <InputText class="form-control" @bind-value="c.CITY"></InputText>
+    </div>
+    <div class="form-group">
+        <label><strong>County Where Collision Occurred:</strong></label>
+        <ValidationMessage For="@(() => c.COUNTY_NAME)"></ValidationMessage>
+        <InputText class="form-control" @bind-value="c.COUNTY_NAME"></InputText>
+    </div>
+    <div class="form-group">
+        <label><strong>County Where Collision Occurred:</strong></label>
+        <ValidationMessage For="@(() => c.COUNTY_NAME)"></ValidationMessage>
+        <InputText class="form-control" @bind-value="c.COUNTY_NAME"></InputText>
+    </div>
+    <div class="form-group">
+        <label><strong>Select the Severity of the Crash:</strong></label>
+        <ValidationMessage For="@(() => c.CRASH_SEVERITY_ID)"></ValidationMessage>
+        <InputNumber class="form-control" @bind-Value="c.CRASH_SEVERITY_ID"></InputNumber>
+    </div>
+    <div class="form-group">
+        <label><strong>Did the Collision Occur in a Work Zone:</strong></label>
+        <ValidationMessage For="@(() => c.WORK_ZONE_RELATED)"></ValidationMessage>
+        <InputNumber class="form-control" @bind-Value="c.WORK_ZONE_RELATED"></InputNumber>
+    </div>
+    <div class="form-group">
+        <label><strong>Did the Collision Occur in a Work Zone:</strong></label>
+        <ValidationMessage For="@(() => c.WORK_ZONE_RELATED)"></ValidationMessage>
+        <InputNumber class="form-control" @bind-Value="c.WORK_ZONE_RELATED"></InputNumber>
+    </div>
+
+
+    <label asp-for="PEDESTRIAN_INVOLVED"><strong>Was There a Pedestrian Involved:</strong></label><br />
+    <select asp-for="PEDESTRIAN_INVOLVED" />
+    <option value="">Select an Option</option>
+    @foreach (Category m in ViewBag.Pedestrian)
+    {
+        <option value="@m.CategoryID">@m.CategoryName</option>
+    }
+    </select><br />
+
+    <label asp-for="BICYCLIST_INVOLVED"><strong>Was There a Bicycle Involved:</strong></label><br />
+    <select asp-for="BICYCLIST_INVOLVED" />
+    <option value="">Select an Option</option>
+    @foreach (Category m in ViewBag.Bicycle)
+    {
+        <option value="@m.CategoryID">@m.CategoryName</option>
+    }
+    </select><br />
+
+    <label asp-for="MOTORCYCLE_INVOLVED"><strong>Was There a Motorcycle Involved:</strong></label><br />
+    <select asp-for="MOTORCYCLE_INVOLVED" />
+    <option value="">Select an Option</option>
+    @foreach (Category m in ViewBag.Motorcycle)
+    {
+        <option value="@m.CategoryID">@m.CategoryName</option>
+    }
+    </select><br />
+
+    <label asp-for="IMPROPER_RESTRAINT"><strong>Was There any Improper Restraint Involved:</strong></label><br />
+    <select asp-for="IMPROPER_RESTRAINT" />
+    <option value="">Select an Option</option>
+    @foreach (Category m in ViewBag.ImproperRestraint)
+    {
+        <option value="@m.CategoryID">@m.CategoryName</option>
+    }
+    </select><br />
+
+    <label asp-for="UNRESTRAINED"><strong>Was There Anyone Unrestrained:</strong></label><br />
+    <select asp-for="UNRESTRAINED" />
+    <option value="">Select an Option</option>
+    @foreach (Category m in ViewBag.unrestrained)
+    {
+        <option value="@m.CategoryID">@m.CategoryName</option>
+    }
+    </select><br />
+
+    <label asp-for="DUI"><strong>Was There a DUI Involved:</strong></label><br />
+    <select asp-for="DUI" />
+    <option value="">Select an Option</option>
+    @foreach (Category m in ViewBag.Dui)
+    {
+        <option value="@m.CategoryID">@m.CategoryName</option>
+    }
+    </select><br />
+
+    <label asp-for="INTERSECTION_RELATED"><strong>Was There an Intersection Involved:</strong></label><br />
+    <select asp-for="INTERSECTION_RELATED" />
+    <option value="">Select an Option</option>
+    @foreach (Category m in ViewBag.Intersection)
+    {
+        <option value="@m.CategoryID">@m.CategoryName</option>
+    }
+    </select><br />
+
+    <label asp-for="WILD_ANIMAL_RELATED"><strong>Was There a Wild Animal Involved:</strong></label><br />
+    <select asp-for="WILD_ANIMAL_RELATED" />
+    <option value="">Select an Option</option>
+    @foreach (Category m in ViewBag.WildAnimal)
+    {
+        <option value="@m.CategoryID">@m.CategoryName</option>
+    }
+    </select><br />
+
+    <label asp-for="DOMESTIC_ANIMAL_RELATED"><strong>Was There a Domisticated Animal Involved:</strong></label><br />
+    <select asp-for="DOMESTIC_ANIMAL_RELATED" />
+    <option value="">Select an Option</option>
+    @foreach (Category m in ViewBag.DomisticatedAnimal)
+    {
+        <option value="@m.CategoryID">@m.CategoryName</option>
+    }
+    </select><br />
+
+    <label asp-for="OVERTURN_ROLLOVER"><strong>Was There an Overturn/Rollover Involved:</strong></label><br />
+    <select asp-for="OVERTURN_ROLLOVER" />
+    <option value="">Select an Option</option>
+    @foreach (Category m in ViewBag.OverturnRollover)
+    {
+        <option value="@m.CategoryID">@m.CategoryName</option>
+    }
+    </select><br />
+
+    <label asp-for="COMMERCIAL_MOTOR_VEH_INVOLVED"><strong>Was There a Commercial Motor Vehicle Involved:</strong></label><br />
+    <select asp-for="COMMERCIAL_MOTOR_VEH_INVOLVED" />
+    <option value="">Select an Option</option>
+    @foreach (Category m in ViewBag.CommercialVehicle)
+    {
+        <option value="@m.CategoryID">@m.CategoryName</option>
+    }
+    </select><br />
+
+    <label asp-for="TEENAGE_DRIVER_INVOLVED"><strong>Was There a Teenage Driver Involved:</strong></label><br />
+    <select asp-for="TEENAGE_DRIVER_INVOLVED" />
+    <option value="">Select an Option</option>
+    @foreach (Category m in ViewBag.TeenageDriver)
+    {
+        <option value="@m.CategoryID">@m.CategoryName</option>
+    }
+    </select><br />
+
+    <label asp-for="OLDER_DRIVER_INVOLVED"><strong>Was There an Older Driver Involved:</strong></label><br />
+    <select asp-for="OLDER_DRIVER_INVOLVED" />
+    <option value="">Select an Option</option>
+    @foreach (Category m in ViewBag.OlderDriver)
+    {
+        <option value="@m.CategoryID">@m.CategoryName</option>
+    }
+    </select><br />
+
+    <label asp-for="NIGHT_DARK_CONDITION"><strong>Was it Dark Outside:</strong></label><br />
+    <select asp-for="NIGHT_DARK_CONDITION" />
+    <option value="">Select an Option</option>
+    @foreach (Category m in ViewBag.NightDark)
+    {
+        <option value="@m.CategoryID">@m.CategoryName</option>
+    }
+    </select><br />
+
+    <label asp-for="SINGLE_VEHICLE"><strong>Was There Only a Single Vehicle Involved:</strong></label><br />
+    <select asp-for="SINGLE_VEHICLE" />
+    <option value="">Select an Option</option>
+    @foreach (Category m in ViewBag.SingleVehicle)
+    {
+        <option value="@m.CategoryID">@m.CategoryName</option>
+    }
+    </select><br />
+
+    <label asp-for="DISTRACTED_DRIVING"><strong>Were There any Distracted Drivers Involved:</strong></label><br />
+    <select asp-for="DISTRACTED_DRIVING" />
+    <option value="">Select an Option</option>
+    @foreach (Category m in ViewBag.DistractedDriving)
+    {
+        <option value="@m.CategoryID">@m.CategoryName</option>
+    }
+    </select><br />
+
+    <label asp-for="DROWSY_DRIVING"><strong>Were There any Drowsy Drivers Involved:</strong></label><br />
+    <select asp-for="DROWSY_DRIVING" />
+    <option value="">Select an Option</option>
+    @foreach (Category m in ViewBag.DrowsyDriving)
+    {
+        <option value="@m.CategoryID">@m.CategoryName</option>
+    }
+    </select><br />
+
+    <label asp-for="ROADWAY_DEPARTURE"><strong>Were There any Roadway Departures Involved:</strong></label><br />
+    <select asp-for="ROADWAY_DEPARTURE" />
+    <option value="">Select an Option</option>
+    @foreach (Category m in ViewBag.DistractedDriving)
+    {
+        <option value="@m.CategoryID">@m.CategoryName</option>
+    }
+    </select><br />
+
+    <!--Submit Button-->
+    <button type="submit">Submit Form</button>
+</EditForm>
 
 @code {
+    [Parameter]
+    public long Id { get; set; } = 0;
 
+    public string ThemeColor => Id == 0 ? "primary" : "warning";
+    public string TitleText => Id == 0 ? "Create" : "Edit";
+
+    public Collision c { get; set; } = new Collision();
+
+    public ICollisionRepository repo => Service;
+
+    protected override void OnParametersSet()
+    {
+        if (Id != 0)
+        {
+            c = repo.Collisions.FirstOrDefault(x => x.CRASH_ID == Id);
+        }
+    }
+
+    public void SaveCollision()
+    {
+        if (Id == 0)
+        {
+            repo.AddCollision(c);
+        }
+        else
+        {
+            repo.EditCollision(c);
+        }
+
+        NavManager.NavigateTo("/admin/collisions");
+    }
+
+    [Inject]
+    public NavigationManager NavManager { get; set; }
 }

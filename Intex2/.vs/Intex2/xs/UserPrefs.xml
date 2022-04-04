@@ -1,5 +1,15 @@
 ﻿<Properties StartupConfiguration="{019D3B76-BE74-440E-B67B-464242C44EB8}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Intex2/Models/Collision.cs">
+    <Files>
+      <File FileName="Intex2/Pages/Admin/Routed.razor" Line="9" Column="10" />
+      <File FileName="Intex2/Controllers/AccountController.cs" Line="44" Column="14" />
+      <File FileName="Intex2/Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="Intex2/Pages/Admin/Collisions.razor" Line="43" Column="66" />
+      <File FileName="Intex2/Models/ICollisionRespository.cs" Line="10" Column="27" />
+      <File FileName="Intex2/Pages/Admin/Editor.razor" Line="51" Column="64" />
+      <File FileName="Intex2/Models/EFCollisionRespository.cs" Line="17" Column="32" />
+      <File FileName="Intex2/Models/Collision.cs" Line="1" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -11,12 +21,16 @@
               </Node>
               <Node name="Controllers" expanded="True" />
               <Node name="Infrastructure" expanded="True" />
-              <Node name="Models" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Collision.cs" selected="True" />
+              </Node>
               <Node name="Pages" expanded="True">
                 <Node name="Admin" expanded="True" />
-                <Node name="UpdateCompleted.cshtml" selected="True" />
               </Node>
-              <Node name="Views" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Account" expanded="True" />
+                <Node name="Home" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>

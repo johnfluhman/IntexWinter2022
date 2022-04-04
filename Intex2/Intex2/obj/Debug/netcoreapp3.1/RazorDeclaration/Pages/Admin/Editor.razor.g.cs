@@ -53,13 +53,56 @@ using Intex2.Models;
 #line default
 #line hidden
 #nullable disable
-    public partial class Editor : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/admin/books/edit/{id:long}")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/admin/books/create")]
+    public partial class Editor : OwningComponentBase<ICollisionRepository>
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 246 "/Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/Pages/Admin/Editor.razor"
+       
+    [Parameter]
+    public long Id { get; set; } = 0;
+
+    public string ThemeColor => Id == 0 ? "primary" : "warning";
+    public string TitleText => Id == 0 ? "Create" : "Edit";
+
+    public Collision c { get; set; } = new Collision();
+
+    public ICollisionRepository repo => Service;
+
+    protected override void OnParametersSet()
+    {
+        if (Id != 0)
+        {
+            c = repo.Collisions.FirstOrDefault(x => x.CRASH_ID == Id);
+        }
+    }
+
+    public void SaveCollision()
+    {
+        if (Id == 0)
+        {
+            repo.AddCollision(c);
+        }
+        else
+        {
+            repo.EditCollision(c);
+        }
+
+        NavManager.NavigateTo("/admin/collisions");
+    }
+
+    [Inject]
+    public NavigationManager NavManager { get; set; }
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591
