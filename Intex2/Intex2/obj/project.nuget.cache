@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/KcWLuSJ953ArTTSJiFEtcNgktFJF3jVS1ITLhkzxHSxenR/S2k+AFcg/JGGWwSTP/LQUC+XDyM06mP9P1Oqjg==",
+  "dgSpecHash": "jAEAhe98fF+A4DK0cB7gdkVS98G7BmSANa1J9Dd93sm7lEM+enlMe/Ih9Ml96wmxleW/QGcScMvCQeGgDkNacw==",
   "success": true,
   "projectFilePath": "/Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/Intex2.csproj",
   "expectedPackageFiles": [
@@ -8,7 +8,6 @@
     "/Users/johnfluhman/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/3.1.22/microsoft.aspnetcore.cryptography.keyderivation.3.1.22.nupkg.sha512",
     "/Users/johnfluhman/.nuget/packages/microsoft.aspnetcore.diagnostics.entityframeworkcore/3.1.22/microsoft.aspnetcore.diagnostics.entityframeworkcore.3.1.22.nupkg.sha512",
     "/Users/johnfluhman/.nuget/packages/microsoft.aspnetcore.identity.entityframeworkcore/3.1.22/microsoft.aspnetcore.identity.entityframeworkcore.3.1.22.nupkg.sha512",
-    "/Users/johnfluhman/.nuget/packages/microsoft.aspnetcore.identity.ui/3.1.22/microsoft.aspnetcore.identity.ui.3.1.22.nupkg.sha512",
     "/Users/johnfluhman/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/Users/johnfluhman/.nuget/packages/microsoft.bcl.hashcode/1.1.1/microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
     "/Users/johnfluhman/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
@@ -30,8 +29,6 @@
     "/Users/johnfluhman/.nuget/packages/microsoft.extensions.dependencyinjection/3.1.22/microsoft.extensions.dependencyinjection.3.1.22.nupkg.sha512",
     "/Users/johnfluhman/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/3.1.22/microsoft.extensions.dependencyinjection.abstractions.3.1.22.nupkg.sha512",
     "/Users/johnfluhman/.nuget/packages/microsoft.extensions.dependencymodel/3.1.6/microsoft.extensions.dependencymodel.3.1.6.nupkg.sha512",
-    "/Users/johnfluhman/.nuget/packages/microsoft.extensions.fileproviders.abstractions/3.1.22/microsoft.extensions.fileproviders.abstractions.3.1.22.nupkg.sha512",
-    "/Users/johnfluhman/.nuget/packages/microsoft.extensions.fileproviders.embedded/3.1.22/microsoft.extensions.fileproviders.embedded.3.1.22.nupkg.sha512",
     "/Users/johnfluhman/.nuget/packages/microsoft.extensions.identity.core/3.1.22/microsoft.extensions.identity.core.3.1.22.nupkg.sha512",
     "/Users/johnfluhman/.nuget/packages/microsoft.extensions.identity.stores/3.1.22/microsoft.extensions.identity.stores.3.1.22.nupkg.sha512",
     "/Users/johnfluhman/.nuget/packages/microsoft.extensions.logging/3.1.22/microsoft.extensions.logging.3.1.22.nupkg.sha512",
@@ -39,7 +36,7 @@
     "/Users/johnfluhman/.nuget/packages/microsoft.extensions.options/3.1.22/microsoft.extensions.options.3.1.22.nupkg.sha512",
     "/Users/johnfluhman/.nuget/packages/microsoft.extensions.primitives/3.1.22/microsoft.extensions.primitives.3.1.22.nupkg.sha512",
     "/Users/johnfluhman/.nuget/packages/mysqlconnector/0.69.10/mysqlconnector.0.69.10.nupkg.sha512",
-    "/Users/johnfluhman/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512",
+    "/Users/johnfluhman/.nuget/packages/newtonsoft.json/11.0.2/newtonsoft.json.11.0.2.nupkg.sha512",
     "/Users/johnfluhman/.nuget/packages/pomelo.entityframeworkcore.mysql/3.2.7/pomelo.entityframeworkcore.mysql.3.2.7.nupkg.sha512",
     "/Users/johnfluhman/.nuget/packages/pomelo.jsonobject/2.2.1/pomelo.jsonobject.2.2.1.nupkg.sha512",
     "/Users/johnfluhman/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.0.4/sqlitepclraw.bundle_e_sqlite3.2.0.4.nupkg.sha512",

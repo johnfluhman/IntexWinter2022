@@ -3,13 +3,11 @@
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/obj/Debug/netcoreapp3.1/Intex2.AssemblyInfoInputs.cache
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/obj/Debug/netcoreapp3.1/Intex2.AssemblyInfo.cs
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/obj/Debug/netcoreapp3.1/Intex2.csproj.CoreCompileInputs.cache
-/Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/obj/Debug/netcoreapp3.1/Intex2.MvcApplicationPartsAssemblyInfo.cs
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/obj/Debug/netcoreapp3.1/Intex2.MvcApplicationPartsAssemblyInfo.cache
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/obj/Debug/netcoreapp3.1/Intex2.RazorAssemblyInfo.cache
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/obj/Debug/netcoreapp3.1/Intex2.RazorAssemblyInfo.cs
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/bin/Debug/netcoreapp3.1/appsettings.Development.json
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/bin/Debug/netcoreapp3.1/appsettings.json
-/Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/bin/Debug/netcoreapp3.1/Intex2.StaticWebAssets.xml
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/bin/Debug/netcoreapp3.1/Intex2.deps.json
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/bin/Debug/netcoreapp3.1/Intex2.runtimeconfig.json
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/bin/Debug/netcoreapp3.1/Intex2.runtimeconfig.dev.json
@@ -21,9 +19,6 @@
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-/Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Identity.UI.Views.V3.dll
-/Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Identity.UI.Views.V4.dll
-/Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Identity.UI.dll
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/bin/Debug/netcoreapp3.1/Microsoft.Data.Sqlite.dll
@@ -41,8 +36,6 @@
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll
-/Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/bin/Debug/netcoreapp3.1/Microsoft.Extensions.FileProviders.Abstractions.dll
-/Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/bin/Debug/netcoreapp3.1/Microsoft.Extensions.FileProviders.Embedded.dll
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Identity.Core.dll
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Identity.Stores.dll
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll
@@ -92,7 +85,6 @@
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/obj/Debug/netcoreapp3.1/Intex2.dll
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/obj/Debug/netcoreapp3.1/Intex2.pdb
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/obj/Debug/netcoreapp3.1/Intex2.genruntimeconfig.cache
-/Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/obj/Debug/netcoreapp3.1/Razor/Areas/Identity/Pages/_ViewStart.cshtml.g.cs
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/obj/Debug/netcoreapp3.1/Razor/Views/Account/Login.cshtml.g.cs
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/obj/Debug/netcoreapp3.1/Intex2.RazorComponent.input.cache
@@ -116,3 +108,4 @@
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/obj/Debug/netcoreapp3.1/Razor/Pages/_ViewStart.cshtml.g.cs
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/obj/Debug/netcoreapp3.1/Razor/Views/Home/Details.cshtml.g.cs
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/obj/Debug/netcoreapp3.1/Razor/Views/Home/Summary.cshtml.g.cs
+/Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/obj/Debug/netcoreapp3.1/Razor/Pages/_CollisionLayout.cshtml.g.cs

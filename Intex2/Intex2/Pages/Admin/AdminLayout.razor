@@ -1,5 +1,25 @@
-﻿<h3>Component1</h3>
+﻿@inherits LayoutComponentBase
 
-@code {
+<div class="bg-info text-white p-2">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <span class="navbar-brand m-lg-2">Collision Administration</span>
+            </div>
+            <div class="col-2">
+                <a class="btn btn-sm btn-primary" href="/account/logout">Log Out</a>
+            </div>
+        </div>
+    </div>
+</div>
 
-}
+<div class="container-fluid">
+    <div class="row p-2">
+        <div class="col-3 d-grid">
+            <NavLink class="btn btn-block btn-outline-primary" href="/admin/collisions" ActiveClass="btn-primary text-white" Match="NavLinkMatch.Prefix">Collisions</NavLink>
+        </div>
+        <div class="col">
+            @Body
+        </div>
+    </div>
+</div>
