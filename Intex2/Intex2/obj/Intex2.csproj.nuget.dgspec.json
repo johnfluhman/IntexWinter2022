@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/Intex2.csproj": {}
+    "/Users/yejinchoi/Projects/IntexWinter2022/Intex2/Intex2/Intex2.csproj": {}
   },
   "projects": {
-    "/Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/Intex2.csproj": {
+    "/Users/yejinchoi/Projects/IntexWinter2022/Intex2/Intex2/Intex2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/Intex2.csproj",
+        "projectUniqueName": "/Users/yejinchoi/Projects/IntexWinter2022/Intex2/Intex2/Intex2.csproj",
         "projectName": "Intex2",
-        "projectPath": "/Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/Intex2.csproj",
-        "packagesPath": "/Users/johnfluhman/.nuget/packages/",
-        "outputPath": "/Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/obj/",
+        "projectPath": "/Users/yejinchoi/Projects/IntexWinter2022/Intex2/Intex2/Intex2.csproj",
+        "packagesPath": "/Users/yejinchoi/.nuget/packages/",
+        "outputPath": "/Users/yejinchoi/Projects/IntexWinter2022/Intex2/Intex2/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/johnfluhman/.config/NuGet/NuGet.Config"
+          "/Users/yejinchoi/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -64,6 +64,18 @@
               "target": "Package",
               "version": "[3.1.22, )"
             },
+            "Microsoft.ML": {
+              "target": "Package",
+              "version": "[1.7.1, )"
+            },
+            "Microsoft.ML.OnnxRuntime": {
+              "target": "Package",
+              "version": "[1.11.0, )"
+            },
+            "Microsoft.ML.OnnxTransformer": {
+              "target": "Package",
+              "version": "[1.7.1, )"
+            },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[3.2.7, )"
@@ -87,7 +99,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.404/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.103/RuntimeIdentifierGraph.json"
         }
       }
     }
