@@ -36,6 +36,11 @@ namespace Intex2.Controllers
             return View();
         }
 
+        public IActionResult Calculator()
+        {
+            return View();
+        }
+
         public IActionResult Summary(int pageNum = 1)
         {
             int pageSize = 100;

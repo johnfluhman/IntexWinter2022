@@ -63,7 +63,7 @@ using Intex2.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 246 "/Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/Pages/Admin/Editor.razor"
+#line 172 "/Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/Pages/Admin/Editor.razor"
        
     [Parameter]
     public long Id { get; set; } = 0;

@@ -109,3 +109,4 @@
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/obj/Debug/netcoreapp3.1/Razor/Views/Home/Details.cshtml.g.cs
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/obj/Debug/netcoreapp3.1/Razor/Views/Home/Summary.cshtml.g.cs
 /Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/obj/Debug/netcoreapp3.1/Razor/Pages/_CollisionLayout.cshtml.g.cs
+/Users/johnfluhman/Documents/GitHub/IntexWinter2022/Intex2/Intex2/obj/Debug/netcoreapp3.1/Razor/Views/Home/Calculator.cshtml.g.cs

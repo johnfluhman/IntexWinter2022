@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{019D3B76-BE74-440E-B67B-464242C44EB8}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Intex2/Pages/Admin/Editor.razor">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Intex2/Controllers/HomeController.cs">
     <Files>
       <File FileName="Intex2/Controllers/AccountController.cs" Line="1" Column="1" />
       <File FileName="Intex2/Models/ViewModels/LoginModel.cs" Line="1" Column="1" />
@@ -13,7 +13,11 @@
       <File FileName="Intex2/Program.cs" Line="18" Column="1" />
       <File FileName="Intex2/Models/IdentitySeedData.cs" Line="36" Column="47" />
       <File FileName="Intex2/Pages/Admin/Details.razor" Line="1" Column="1" />
-      <File FileName="Intex2/Pages/Admin/Editor.razor" Line="1" Column="1" />
+      <File FileName="Intex2/Pages/Admin/Editor.razor" Line="169" Column="63" />
+      <File FileName="Intex2/Views/Home/Calculator.cshtml" Line="1" Column="1" />
+      <File FileName="Intex2/Views/Home/Index.cshtml" Line="1" Column="1" />
+      <File FileName="Intex2/Views/Shared/_Layout.cshtml" Line="32" Column="127" />
+      <File FileName="Intex2/Controllers/HomeController.cs" Line="39" Column="40" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,15 +27,15 @@
               <Node name="Dependencies" expanded="True">
                 <Node name="PackageDependencies" expanded="True" />
               </Node>
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="HomeController.cs" selected="True" />
+              </Node>
               <Node name="Infrastructure" expanded="True" />
               <Node name="Models" expanded="True">
                 <Node name="ViewModels" expanded="True" />
               </Node>
               <Node name="Pages" expanded="True">
-                <Node name="Admin" expanded="True">
-                  <Node name="Editor.razor" selected="True" />
-                </Node>
+                <Node name="Admin" expanded="True" />
               </Node>
               <Node name="Views" expanded="True">
                 <Node name="Account" expanded="True" />
